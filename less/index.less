@@ -71,8 +71,8 @@ html, body {
 .container {
 	font-family: @font-family;
 	margin: 0 auto;
-	width: 90%;
-	// border: 1px solid grey;
+	width: 100%;
+	border: 1px solid grey;
 	.nav-container {
 		display: flex;
 		justify-content: flex-end;
@@ -82,8 +82,8 @@ html, body {
 			text-decoration: none;
 			color: darkgray;
 		}
-	}
-	.header-container {
+	}//end nav container
+	.content-container {
 		background-color: #d7dae0;
 		display: flex;
 		flex-direction: column;
@@ -93,6 +93,7 @@ html, body {
 			flex-direction: column;
 			width: 90%;
 			margin-top: 30px;
+			margin-bottom: 30px;
 			img {
 				height: 35%;
 				width: 35%;
@@ -123,7 +124,33 @@ html, body {
 				.padding()
 			}
 		}
+	}//end header container
+	.bottom-container {
+		display: flex;
+		justify-content: center;
+		.bottom-content {
+			display: flex;
+			width: 90%;
+			.padding();
+			.bio {
+				width: 50%;
+				h2 {
+					font-size: 2rem;
+					.padding()
+					
+				}
+				p {
+					display: flex;
+					flex-wrap: wrap;
+					width: 50%; 
+					font-size: 1.6rem;
+					.padding();
+				}
+			}//end bio
+			.table1-container {
+				
+			}
+		}
 	}
-	
 }//end container Less
 
