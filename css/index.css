@@ -203,6 +203,11 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .container .content-container .header-top button {
+    width: 100%;
+  }
+}
 .container .bottom-container {
   display: flex;
   justify-content: center;
