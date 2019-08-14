@@ -49,11 +49,35 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+//Variables//
+@font-family: 'Raleway', sans-serif;
+
+
+
 * {
     box-sizing: border-box;
 }
-
+html {
+	font-size: 62.5%;
+}
 html, body {
     height: 100%;
 }
+.container {
+	font-family: @font-family;
+	margin: 0 auto;
+	width: 90%;
+	border: 1px solid grey;
+	.nav-container {
+		display: flex;
+		justify-content: flex-end;
+		a {
+			padding-left: 20px;
+			font-size: 2rem;
+			text-decoration: none;
+			color: darkgray;
+		}
+	}
+	
+}//end container Less
 

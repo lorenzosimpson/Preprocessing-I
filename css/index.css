@@ -130,7 +130,26 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
+}
+.container {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  width: 90%;
+  border: 1px solid grey;
+}
+.container .nav-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.container .nav-container a {
+  padding-left: 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: darkgray;
 }
