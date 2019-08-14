@@ -140,16 +140,22 @@ body {
 .container {
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
-  width: 100%;
-  border: 1px solid grey;
+  width: 95%;
+  height: 100%;
 }
 .container .nav-container {
   display: flex;
   justify-content: flex-end;
 }
-.container .nav-container a {
+@media screen and (max-width: 500px) {
+  .container .nav-container .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .nav-container .navbar a {
   padding-left: 20px;
-  font-size: 2rem;
+  font-size: 3rem;
   text-decoration: none;
   color: darkgray;
 }
@@ -206,6 +212,7 @@ body {
 .container .bottom-container .bottom-content {
   display: flex;
   width: 90%;
+  flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -224,4 +231,34 @@ body {
   font-size: 1.6rem;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.container .bottom-container .bottom-content .skills-container {
+  width: 50%;
+}
+.container .bottom-container .bottom-content .skills-container h2 {
+  font-size: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container .bottom-container .bottom-content .skills-container ul {
+  list-style: disc;
+  font-size: 1.8rem;
+}
+.container .bottom-container .bottom-content .table2-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .bottom-container .bottom-content .table2-container table {
+  font-size: 2rem;
+}
+.container .bottom-container .bottom-content .table2-container table .table-head {
+  font-size: 2.5rem;
+}
+.container .bottom-container .bottom-content .table2-container table tr td {
+  padding: 20px;
+}
+.container footer {
+  display: flex;
+  justify-content: center;
 }

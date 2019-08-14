@@ -58,7 +58,6 @@ table {
 	padding-bottom: 20px;
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -71,18 +70,26 @@ html, body {
 .container {
 	font-family: @font-family;
 	margin: 0 auto;
-	width: 100%;
-	border: 1px solid grey;
+	width: 95%;
+	height: 100%;
 	.nav-container {
 		display: flex;
 		justify-content: flex-end;
-		a {
-			padding-left: 20px;
-			font-size: 2rem;
-			text-decoration: none;
-			color: darkgray;
+		.navbar {
+			@media screen and (max-width: 500px) {
+				display: flex;
+				flex-direction: column;
+			}
+			//media query goes here
+			a {
+				padding-left: 20px;
+				font-size: 3rem;
+				text-decoration: none;
+				color: darkgray;
+			}
 		}
 	}//end nav container
+
 	.content-container {
 		background-color: #d7dae0;
 		display: flex;
@@ -124,13 +131,14 @@ html, body {
 				.padding()
 			}
 		}
-	}//end header container
+	} //end content container
 	.bottom-container {
 		display: flex;
 		justify-content: center;
 		.bottom-content {
 			display: flex;
 			width: 90%;
+			flex-wrap: wrap;
 			.padding();
 			.bio {
 				width: 50%;
@@ -147,10 +155,39 @@ html, body {
 					.padding();
 				}
 			}//end bio
-			.table1-container {
-				
-			}
-		}
+			.skills-container {
+				width: 50%;	
+				h2 {
+					font-size: 2rem;
+					.padding()
+
+				}
+				ul {
+					list-style: disc;
+					font-size: 1.8rem;	
+				}
+			}//end skills container
+			.table2-container {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				table {
+					font-size: 2rem;
+					.table-head {
+						font-size: 2.5rem;
+					}
+					tr {
+						td {
+							padding: 20px;	
+						}
+					}
+					}//end table
+			}//end table2 container
+		}//end bottom content
+	}//end bottom container
+	footer {
+		display: flex;
+		justify-content: center;
 	}
 }//end container Less
 
