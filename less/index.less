@@ -52,6 +52,11 @@ table {
 //Variables//
 @font-family: 'Raleway', sans-serif;
 
+// mixins
+.padding() {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 
 
 * {
@@ -67,7 +72,7 @@ html, body {
 	font-family: @font-family;
 	margin: 0 auto;
 	width: 90%;
-	border: 1px solid grey;
+	// border: 1px solid grey;
 	.nav-container {
 		display: flex;
 		justify-content: flex-end;
@@ -76,6 +81,47 @@ html, body {
 			font-size: 2rem;
 			text-decoration: none;
 			color: darkgray;
+		}
+	}
+	.header-container {
+		background-color: #d7dae0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.header-top {
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			margin-top: 30px;
+			img {
+				height: 35%;
+				width: 35%;
+			}
+			h1 {
+				font-size: 5rem;
+				.padding()
+			}
+			h3 {
+				font-size: 2rem;
+				border-top: 1px dashed gray;
+				.padding()
+			}
+			p {
+				display: flex;
+				flex-wrap: wrap;
+				width: 50%;
+				font-size: 1.8rem;
+				.padding()
+			}
+			button {
+				width: 20%;
+				font-size: 2rem;
+				border: 1px solid darkgray;
+				border-radius: 5px;
+				background-color: #454545;
+				color: white;
+				.padding()
+			}
 		}
 	}
 	

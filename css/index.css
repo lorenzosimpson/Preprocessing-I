@@ -141,7 +141,6 @@ body {
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
   width: 90%;
-  border: 1px solid grey;
 }
 .container .nav-container {
   display: flex;
@@ -152,4 +151,49 @@ body {
   font-size: 2rem;
   text-decoration: none;
   color: darkgray;
+}
+.container .header-container {
+  background-color: #d7dae0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .header-container .header-top {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 30px;
+}
+.container .header-container .header-top img {
+  height: 35%;
+  width: 35%;
+}
+.container .header-container .header-top h1 {
+  font-size: 5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container .header-container .header-top h3 {
+  font-size: 2rem;
+  border-top: 1px dashed gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container .header-container .header-top p {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  font-size: 1.8rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container .header-container .header-top button {
+  width: 20%;
+  font-size: 2rem;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  background-color: #454545;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
