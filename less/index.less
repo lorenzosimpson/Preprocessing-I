@@ -49,11 +49,145 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+//Variables//
+@font-family: 'Raleway', sans-serif;
+
+// mixins
+.padding() {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 * {
     box-sizing: border-box;
 }
-
+html {
+	font-size: 62.5%;
+}
 html, body {
     height: 100%;
 }
+.container {
+	font-family: @font-family;
+	margin: 0 auto;
+	width: 95%;
+	height: 100%;
+	.nav-container {
+		display: flex;
+		justify-content: flex-end;
+		.navbar {
+			@media screen and (max-width: 500px) {
+				display: flex;
+				flex-direction: column;
+			}
+			//media query goes here
+			a {
+				padding-left: 20px;
+				font-size: 3rem;
+				text-decoration: none;
+				color: darkgray;
+			}
+		}
+	}//end nav container
+
+	.content-container {
+		background-color: #d7dae0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.header-top {
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			img {
+				height: 35%;
+				width: 35%;
+			}
+			h1 {
+				font-size: 5rem;
+				.padding()
+			}
+			h3 {
+				font-size: 2rem;
+				border-top: 1px dashed gray;
+				.padding()
+			}
+			p {
+				display: flex;
+				flex-wrap: wrap;
+				width: 50%;
+				font-size: 1.8rem;
+				.padding()
+			}
+			button {
+				width: 20%;
+				font-size: 2rem;
+				border: 1px solid darkgray;
+				border-radius: 5px;
+				background-color: #454545;
+				color: white;
+				.padding()
+			}
+		}
+	} //end content container
+	.bottom-container {
+		display: flex;
+		justify-content: center;
+		.bottom-content {
+			display: flex;
+			width: 90%;
+			flex-wrap: wrap;
+			.padding();
+			.bio {
+				width: 50%;
+				h2 {
+					font-size: 2rem;
+					.padding()
+					
+				}
+				p {
+					display: flex;
+					flex-wrap: wrap;
+					width: 50%; 
+					font-size: 1.6rem;
+					.padding();
+				}
+			}//end bio
+			.skills-container {
+				width: 50%;	
+				h2 {
+					font-size: 2rem;
+					.padding()
+
+				}
+				ul {
+					list-style: disc;
+					font-size: 1.8rem;	
+				}
+			}//end skills container
+			.table2-container {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				table {
+					font-size: 2rem;
+					.table-head {
+						font-size: 2.5rem;
+					}
+					tr {
+						td {
+							padding: 20px;	
+						}
+					}
+					}//end table
+			}//end table2 container
+		}//end bottom content
+	}//end bottom container
+	footer {
+		display: flex;
+		justify-content: center;
+	}
+}//end container Less
 
