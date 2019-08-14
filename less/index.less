@@ -70,13 +70,11 @@ html, body {
 .container {
 	font-family: @font-family;
 	margin: 0 auto;
-	width: 95%;
-	height: 100%;
 	.nav-container {
 		display: flex;
 		justify-content: flex-end;
 		.navbar {
-			@media screen and (max-width: 500px) {
+			@media(max-width: 500px) {
 				display: flex;
 				flex-direction: column;
 			}
