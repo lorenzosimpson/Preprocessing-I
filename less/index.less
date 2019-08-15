@@ -57,6 +57,10 @@ table {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+.flex-center() {
+	display: flex;
+	justify-content: center;
+}
 
 * {
     box-sizing: border-box;
@@ -70,6 +74,7 @@ html, body {
 .container {
 	font-family: @font-family;
 	margin: 0 auto;
+	width: 100%;
 	.nav-container {
 		display: flex;
 		justify-content: flex-end;
@@ -134,8 +139,7 @@ html, body {
 		}
 	} //end content container
 	.bottom-container {
-		display: flex;
-		justify-content: center;
+		.flex-center();
 		.bottom-content {
 			display: flex;
 			width: 90%;
@@ -170,8 +174,7 @@ html, body {
 			}//end skills container
 			.table2-container {
 				width: 100%;
-				display: flex;
-				justify-content: center;
+				.flex-center();
 				table {
 					font-size: 2rem;
 					.table-head {
@@ -187,8 +190,7 @@ html, body {
 		}//end bottom content
 	}//end bottom container
 	footer {
-		display: flex;
-		justify-content: center;
+		.flex-center();
 	}
 }//end container Less
 
